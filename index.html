@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Form</title>
 </head>
 <body>
@@ -11,17 +12,19 @@
         <a class="main-wrapper__logo-link" href="#">
             <img class="main-wrapper__logo-img" src="./images/logo.svg" alt="logo" width="75" height="75">
 
-            <span class="main-wrapper__logo-img">Bloopy</span>
+            <span class="main-wrapper__logo-text">Bloopy</span>
         </a>
 
         <h1 class="main-wrapper__title">Create Account</h1>
 
         <form class="main-wrapper__form">
-            <input class="main-wrapper__name-input" type="text" placeholder="Full Name">
+            <input class="main-wrapper__name-input form-input" type="text" placeholder="Full Name">
 
-            <input class="main-wrapper__mail-input" type="text" placeholder="Email address">
+            <input class="main-wrapper__number-input form-input" type="text" placeholder="Phone number">
 
-            <input class="main-wrapper__password-input" type="text" placeholder="Password">
+            <input class="main-wrapper__mail-input form-input" type="text" placeholder="Email address">
+
+            <input class="main-wrapper__password-input form-input" type="text" placeholder="Password">
 
             <label class="main-wrapper__terms-label" for="agreement">
                 <input class="main-wrapper__terms-input" type="checkbox" id="agreement" name="agreement" value="agreement">
@@ -29,14 +32,9 @@
             </label>
 
             <button class="main-wrapper__submit-btn" type="submit">SIGN UP</button>
-
-            <button class="main-wrapper__google-btn">Sign Up with Google</button>
-
-            <button class="main-wrapper__facebook-btn">Sign Up with Facebook</button>
         </form>
 
         <p class="main-wrapper__login">Already have an account? <a class="main-wrapper__login-link" href="#">Log In</a></p>
-
     </div>
 </body>
 </html>

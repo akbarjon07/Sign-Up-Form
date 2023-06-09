@@ -1,0 +1,139 @@
+/* GENERAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBFCF4;
+}
+
+/* SIGN UP FORM */
+
+.main-wrapper {
+    width: 550px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    backdrop-filter: blur(100px);
+    border-radius: 50px;
+}
+
+.main-wrapper__logo-link {
+    margin-bottom: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.main-wrapper__logo-text {
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 57px;
+    color: #0B4654;
+}
+
+.main-wrapper__title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 47px;
+    color: #0B4654;
+}
+
+.main-wrapper__form {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    border: 1.5px solid rgba(11, 70, 84, 0.25);
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.5);
+    outline-color: #0B4654;
+}
+
+.main-wrapper__terms-input {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid rgba(11, 70, 84, 0.24);
+    border-radius: 3px;
+    outline-color: #0B4654;
+}
+
+.main-wrapper__terms-label {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.main-wrapper__terms-label span {
+    color: #07B464;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.main-wrapper__submit-btn {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #07B464;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25), inset 0px 1.5px 3px rgba(255, 255, 255, 0.25), inset 0px -1.5px 3px rgba(0, 0, 0, 0.25);
+    border: 1.5px solid transparent;
+    border-radius: 12px;
+    transition: all 300ms linear;
+}
+
+.main-wrapper__submit-btn:hover {
+    background-color: #FFFFFF;
+    color: #07B464;
+    border: 1.5px solid #07B464;
+}
+
+.main-wrapper__submit-btn:active {
+    background-color: #07B464;
+    color: #FFFFFF;
+    border: 1.5px solid #07B464;
+}
+
+.main-wrapper__login {
+    font-weight: 500;
+    font-size: 17.7396px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.main-wrapper__login-link {
+    text-decoration: none;
+    color: #07B464;
+}
+
+.main-wrapper__login-link:hover {
+    opacity: 0.5;
+}
