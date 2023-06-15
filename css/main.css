@@ -59,7 +59,8 @@ body {
 }
 
 .form-input {
-    margin-bottom: 20px;
+    width: 350px;
+    margin-bottom: 15px;
     padding: 10px 30px;
     border: 1.5px solid rgba(11, 70, 84, 0.25);
     border-radius: 6px;
@@ -67,7 +68,27 @@ body {
     font-size: 12px;
     line-height: 19px;
     color: rgba(0, 0, 0, 0.5);
-    outline-color: #0B4654;
+    outline: none;
+}
+
+.alert {
+    visibility: hidden;
+}
+
+.error {
+    visibility: visible;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: red;
+}
+
+.input-error {
+    border: 1.5px solid red;
+}
+
+.success {
+    border: 1.5px solid #07B464;
 }
 
 .main-wrapper__terms-input {
@@ -136,4 +157,32 @@ body {
 
 .main-wrapper__login-link:hover {
     opacity: 0.5;
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+
+    /* SIGN UP FORM */
+
+    .main-wrapper {
+        width: 360px;
+        padding: 10px;
+    }
+
+    .main-wrapper__logo-link {
+        margin-bottom: 40px;
+    }
+
+    .main-wrapper__title {
+        font-size: 25px;
+        line-height: 37px;
+    }
+
+    .main-wrapper__form {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }

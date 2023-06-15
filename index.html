@@ -18,13 +18,29 @@
         <h1 class="main-wrapper__title">Create Account</h1>
 
         <form class="main-wrapper__form">
-            <input class="main-wrapper__name-input form-input" type="text" placeholder="Full Name">
+            <div class="form-control">
+                <input class="main-wrapper__name-input form-input" type="text" placeholder="Username" id="username">
 
-            <input class="main-wrapper__number-input form-input" type="text" placeholder="Phone number">
+                <span class="alert"></span>
+            </div>
 
-            <input class="main-wrapper__mail-input form-input" type="text" placeholder="Email address">
+            <div class="form-control">
+                <input class="main-wrapper__number-input form-input" type="text" placeholder="Phone number" id="number">
 
-            <input class="main-wrapper__password-input form-input" type="text" placeholder="Password">
+                <span class="alert"></span>
+            </div>
+
+            <div class="form-control">
+                <input class="main-wrapper__mail-input form-input" type="text" placeholder="Email address" id="email">
+
+                <p class="alert"></p>
+            </div>
+
+            <div class="form-control">
+                <input class="main-wrapper__password-input form-input" type="password" placeholder="Password" id="password">
+
+                <p class="alert"></p>
+            </div>
 
             <label class="main-wrapper__terms-label" for="agreement">
                 <input class="main-wrapper__terms-input" type="checkbox" id="agreement" name="agreement" value="agreement">
@@ -36,5 +52,7 @@
 
         <p class="main-wrapper__login">Already have an account? <a class="main-wrapper__login-link" href="#">Log In</a></p>
     </div>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
