@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=League+Spartan:wght@700&family=Montserrat:wght@500;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <title>Form</title>
 </head>
@@ -19,33 +22,36 @@
 
         <form class="main-wrapper__form">
             <div class="form-control">
-                <input class="main-wrapper__name-input form-input" type="text" placeholder="Username" id="username">
+                <label class="form-label" for="username">Username</label>
 
-                <span class="alert"></span>
+                <input class="main-wrapper__name-input form-input" id="username" type="text" placeholder="Johnson07" id="username">
+
+                <p class="alert first"></p>
             </div>
 
             <div class="form-control">
-                <input class="main-wrapper__number-input form-input" type="text" placeholder="Phone number" id="number">
+                <label class="form-label" for="email">Email</label>
 
-                <span class="alert"></span>
+                <input class="main-wrapper__mail-input form-input" type="email" placeholder="example@gmail.com" id="email">
+
+                <p class="alert second"></p>
             </div>
 
             <div class="form-control">
-                <input class="main-wrapper__mail-input form-input" type="text" placeholder="Email address" id="email">
+                <label class="form-label" for="password">Password</label>
 
-                <p class="alert"></p>
-            </div>
-
-            <div class="form-control">
                 <input class="main-wrapper__password-input form-input" type="password" placeholder="Password" id="password">
 
-                <p class="alert"></p>
+                <p class="alert third"></p>
             </div>
 
-            <label class="main-wrapper__terms-label" for="agreement">
-                <input class="main-wrapper__terms-input" type="checkbox" id="agreement" name="agreement" value="agreement">
-                I agree with <span>Terms</span> and <span>Privacy</span>
-            </label>
+            <div class="form-control">
+                <label class="form-label" for="password2">Confirm Password</label>
+
+                <input class="main-wrapper__password2-input form-input" type="password" placeholder="Confirm password" id="password2">
+
+                <p class="alert fourth"></p>
+            </div>
 
             <button class="main-wrapper__submit-btn" type="submit">SIGN UP</button>
         </form>
